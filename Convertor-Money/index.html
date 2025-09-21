@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+     <link rel="stylesheet" href="./assets/style.css">
+    <title>Convertor de Moedas</title>
+</head>
+<body>
+    <!-- Caixa para Estilizar -->
+    <div class="container">
+        <!-- Titulo Animador -->
+        <h1 class="text-animation">Currencys <span></span></h1>
+        <!-- Caixa que para Estilizar -->
+        <div class="converter">
+            <!-- Input para Digita Valor -->
+            <input type="number" placeholder="Digite o Valor..." id="amount" min="0">
+            <select id="from-currency"></select>
+            <select id="to-currency"></select>
+            <!-- Butão para Converter -->
+            <button onclick="converterMoeda()">Converter</button>
+        </div>
+        <!-- Resultado Convertido -->
+        <p id="resultado"></p>
+    </div>
+    <!-- Link Javascript -->
+    <script src="./assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d2d2d2;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: .6rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Texto H1 */
+.text-animation {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.text-animation span {
+    position: relative;
+}
+
+.text-animation span::before {
+    content: '';
+    color: #ff6f00;
+    animation: alteretionText 20s infinite;
+}
+
+.text-animation span::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #ff6f00;
+    right: -14px;
+    opacity: 1;
+    animation: cursor .8s infinite, Digita 20s steps(15) infinite;
+    width: calc(100% + 15px);
+    background: #fff;
+}
+
+@keyframes Digita {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 15px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid #fff;
+
+    }
+}
+
+@keyframes alteretionText {
+    0%, 100% {
+        content: 'Convert';
+    }
+}
+
+/* Converter */
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+input, select, button {
+    padding: .7rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: .4rem;
+}
+
+button {
+    background: #ff6f00;
+    color: #fffdfd;
+    cursor: pointer;
+    border: none;
+    transition: background .5s ease;
+}
+
+button:hover {
+    background: #db5f00;
+}
+
+#resultado {
+    font-size: 1.15rem;
+    margin-top: 1.24rem;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
