@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(https://kanto.legiaodosherois.com.br/w760-h398-cfill/wp-content/uploads/2024/01/legiao_BZzxMt6Edjq5.jpg.webp); */
+    background-image: url(https://kanto.legiaodosherois.com.br/w760-h398-gnw-cfill-q95/wp-content/uploads/2024/03/legiao_EqAvyY5Cm0hR.jpg.webp);
+}
+
+/* Background */
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle closest-side, #121212c2, #101010);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container Cronometro */
+#cronometro {
+    width: 310px;
+    height: 310px;
+    background-color: #262626;
+    padding: 2rem;
+    border-radius: 100%;
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    border: 3px solid #0F3232;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    padding: 4rem;
+}
+
+/* Container Buttons */
+#actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    padding: .6rem;
+    border: 1px solid #262626;
+    border-radius: 6px;
+    background-color: #0F3232;
+    color: #ebe7ff;
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
+
+#actions button:hover {
+    background-color: #c4b5;
+}
+
+/* Extrato de Time */
+#mark-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: #ebe7ff;
+}
+
+#mark-list p:first-child {
+    margin-top: 1.5rem;
+}
+
